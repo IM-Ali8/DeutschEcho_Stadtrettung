@@ -1,0 +1,86 @@
+body{
+  margin:0;
+  background:#111;
+  overflow:hidden;
+  font-family:sans-serif;
+}
+
+canvas{
+  background:#000;
+  display:block;
+  margin:auto;
+}
+
+#mobileControls{
+  position:fixed;
+  bottom:10px;
+  left:0;
+  width:100%;
+  display:none;
+  pointer-events:none;
+}
+
+.leftPad,.rightPad{
+  position:absolute;
+  bottom:0;
+  pointer-events:auto;
+}
+
+.leftPad{ left:10px; }
+.rightPad{ right:10px; }
+
+#mobileControls button{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  border:none;
+  background:rgba(0,0,0,0.35);
+  color:#fff;
+  font-size:24px;
+  margin:6px;
+}
+
+#mobileControls button:active{
+  background:rgba(255,255,255,0.4);
+}
+
+@media(max-width:900px){
+  #mobileControls{ display:block; }
+}
+#mobileControls{
+  position:fixed;
+  bottom:10px;
+  left:0;
+  width:100%;
+  display:none;
+  pointer-events:none;
+  z-index:999;
+}
+
+.leftPad,.rightPad{
+  position:absolute;
+  bottom:0;
+  pointer-events:auto;
+}
+
+.leftPad{ left:15px; }
+.rightPad{ right:15px; }
+
+#mobileControls button{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  border:none;
+  background:rgba(0,0,0,0.35);
+  color:#fff;
+  font-size:24px;
+  margin:6px;
+}
+
+#mobileControls button:active{
+  background:rgba(255,255,255,0.4);
+}
+
+@media(max-width:900px){
+  #mobileControls{ display:block; }
+}
